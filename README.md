@@ -15,9 +15,8 @@ Marzipan employs a sophisticated execution model called Progressive Adaptive Lay
 - **Layered**: This refers to the tiered approach Marzipan takes toward executing code. Each layer represents a different execution strategy, ranging from direct interpretation to full machine code compilation:
   - **Interpreted**: The highest layer, where code is executed directly without compilation.
   - **Pseudo Layer**: Includes optimizations at the AST level.
-  - **Raw LLVM IR**: Intermediate representation that may be executed directly or be optimized.
-  - **Optimized IR**: Further optimized IR which may be executed as-is or compiled into machine code.
-  - **Machine Code**: The lowest layer, representing fully compiled code via LLVM IR JIT.
+  - **LLVM IR**: Intermediate representation that may be compiled to machine code directly or be optimized.
+  - **Machine Code**: The lowest layer, representing fully compiled code via LLVM IR.
 - **Execution**: The term underscores that Marzipan's model does not fit neatly into traditional categories of compiled or interpreted languages due to its dynamic and flexible nature.
 
 ## Key Features of PALE
